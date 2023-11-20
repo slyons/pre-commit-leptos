@@ -27,3 +27,39 @@
   args: ["--", "-D", "warnings"]
   types: [rust]
   pass_filenames: false
+- id: leptos-build
+  name: leptos build
+  description: Run leptos build
+  entry: cargo leptos test
+  language: system
+  types: [rust]
+  pass_filenames: false
+- id: leptos-test
+  name: leptos test
+  description: Run leptos test
+  entry: cargo leptos test
+  language: system
+  types: [rust]
+  pass_filenames: false
+- id: leptos-e2e
+  name: leptos end-to-end
+  description: Run leptos e2e tests
+  entry: cargo leptos end-to-end
+  language: system
+  types: [rust]
+  pass_filenames: false
+- id: leptos-e2e
+  name: leptos end-to-end
+  description: Run leptos e2e tests
+  entry: cargo leptos end-to-end
+  language: system
+  types: [rust]
+  pass_filenames: false
+- id: leptosfmt
+  name: leptosfmt
+  description: Run leptosfmt
+  entry: leptosfmt
+  language: system
+  args: ["--", "-r"]
+  types: [rust]
+  pass_filenames: true
